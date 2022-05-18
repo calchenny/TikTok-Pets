@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@400;600&display=swap');
+
+body {
+  margin: 60px 10% 60px 10%; 
+  font-family: 'Inter', sans-serif;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  --ttmagenta: rgba(238, 29, 82, 0.8);
+  
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  
+}
+
+#title {
+  font-size: 48px;
+  font-family: 'Boogaloo', cursive;
+  text-align: center;
+}
+
+#icon {
+  padding-top: 30px;
+  color: rgba(238, 29, 82, 0.8);
+  font-size: 50px;
+  transform: rotate(40deg) scaleX(-1);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#buttonDiv {
+  margin-left: 900px;
+}
+
+.buttons {
+  background: rgba(238, 29, 82, 0.8);
+
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  width: 210px;
+  height: 70px;
+  border-radius: 20px 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: none;
+}
+
+.buttons:hover {
+  background-color: rgb(105, 201, 208);
+}
+
+div.video {
+  width: 325px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: var(--ttmagenta);
+  padding-bottom: 40px;
+  padding-top: 0;
+}
+
+
+blockquote {
+  border-style: solid;
+  border-color:  var(--ttmagenta);
+  border-width: 2px;
+  border-radius: 10px;
+  background-color:var(--ttmagenta);
+}
+
+iframe {
+  margin-top: -1px;
+  margin-left: -1px;
+}
+
+#vidTitle {
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  color: white;
+  padding-top: 420px;
+}
+
+/* Tablet */
+@media screen and (max-width: 900px) {
+  #buttonDiv {
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  #vidTitle {
+    padding-top: 380px;
+  }
+}

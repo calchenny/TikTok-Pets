@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  margin: 60px 10% 60px 10%; 
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title, #thetitle {
+  font-size: 48px;
+  font-family: 'Boogaloo', cursive;
+  text-align: center;
+}
+
+.box {
+  background: rgba(238, 29, 82, 0.8);
+  color:white;
+  background: linear-gradient(130deg, rgba(238,29,82,1) 0%, rgba(105,201,208,1) 100%);
+  width: 600px;
+  height: 525px;
+  border-radius: 30px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+#buttonDiv1 {
+  padding-top: 50px;
+}
+
+.buttons {
+  background: rgba(238, 29, 82, 0.8);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  width: 210px;
+  height: 70px;
+  border-radius: 20px 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.buttons:hover {
+  background-color: rgb(105, 201, 208);
+}
+
+
+#buttonDiv2 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: -75px;
+}
+
+.fields {
+  width: 70%;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-left: 20%;
+  margin-right: 30%;
+}
+
+.fields input {
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.thecontainer {
+  margin: 30px 20% 50px 20%;
+}
+
+#report, #vidName, .videoSubmit {
+  font-family: 'Boogaloo', cursive;
+  font-size: 30px;
+}
+
+#spann {
+  color: #EE1D52;
+}
+
+.videoSubmit {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+
+#resultsMain {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Tablet */
+@media screen and (max-width: 900px) {
+  #title {
+    text-align: left;
+  }
+
+  .container {
+    margin: 60px 15% 60px 15%;
+  }
+  
+  .box {
+    width: 100%;
+    margin-top: 100px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .container {
+    margin-left: 30px;
+    margin-right: 30px; 
+  }
+
+  .box {
+    margin-top: 20px;
+    padding-top: 50px;
+    height: 50vh;
+  }
+  #title, #thetitle {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .fields {
+    width: 80%;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 21%;
+    margin-right: 26%;
+  }
+
+  .fields input {
+    padding:10px;  
+  }
+  
+  #buttonDiv2 {
+    top: -50px;
+  }
+  
+  .buttons {
+    font-size: 16px;
+    width: 130px;
+    height: 45px;
+  }
+} 

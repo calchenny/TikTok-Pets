@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@400;600&display=swap');
+
+.videoName {
+  display: flex;
+  flex-direction: row;
+  border: 3px dotted #808080;
+  border-radius: 15px;
+  width: 500px;
+  height: 45px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.videoList {
+  display:flex;
+  justify-content: center;
+  align-content:center;
+
+  padding-top: 20px;
+}
+
+
+div.box {
+  display: inline-block;
+}
+
+div.box1{
+  margin-right: 150px;
+}
+
+
+p.vn {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  padding-left: 40px;
+}
+
+
+p.delete {
+  position: absolute;
+  font-family: 'Boogaloo', cursive; 
+  color: rgba(238, 29, 82, 0.8);
+  font-size: 64px;
+  cursor: pointer;
+  margin-left: 520px;
+  padding-bottom: 20px;
+}
+
+#button1 {
+  margin-top: 50px;
+}
+
+
+/* tablet */
+@media screen and (max-width: 900px) {
+  .container {
+    margin: 60px 5% 60px 5%; 
+  }
+  
+  #title {
+    text-align: center;
+  }
+  
+  .videoList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div.box1{
+  margin-right: 0px;
+}
+}
+
+
+
+/* mobile */
+@media screen and (max-width: 700px) {
+  .container {
+    margin: 60px 10% 60px 10%; 
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+  
+   #title {
+    text-align: left;
+  }
+  
+  p.vn {
+    font-size: 14px;
+  }
+  .videoName {
+    width: 250px;
+    height: 30px;
+
+    margin-top: 20px;
+  }
+  
+  .videoList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding:0;
+    
+  }
+  
+  div.box {
+    display: block;
+  }
+  p.delete {
+    font-size: 44px;
+    margin-left: 270px;
+  }
+
+  #buttonDiv1 {
+    padding-top: 0;
+  }
+  
+  
+}
